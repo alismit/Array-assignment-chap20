@@ -1,0 +1,180 @@
+<!doctype html>
+<head> </head>
+<body>  
+<script>
+//  9. Write a program to identify the largest number in the given 
+// array.
+// A = [24, 53, 78, 91, 12] 
+document.write("Q9 <br/>");
+var t=[24,53,78,91,12];
+var x=Math.max(...t);
+document.write("maximum value");
+document.write("<br/>"+x);
+
+// <!-- 10. Write a program to identify the smallest number in the given 
+// array.
+// A = [24, 53, 78, 91, 12] -->
+document.write("<br/>");
+document.write("Q10 <br/>");
+var y=[24,53,78,91,12];
+var y=Math.min(...y);
+document.write("minimum value");
+
+document.write("<br/>"+y );
+
+// 11. Write a program to identify the largest & the smallest
+// number in the given array.
+// A = [24, 53, 78, 91, 12]
+
+document.write("<br/>");
+
+document.write("Q11 <br/>");
+var e=[24,53,78,91,12];
+document.write("<br/>maximum value");
+var f=Math.max(...e);
+document.write(f);
+document.write("<br/>minimum value");
+var s=Math.min(...e);
+document.write(s);
+document.write("<br/>");
+
+
+//  12. Write a program to print multiples of 5 ranging 1 to 100 
+    //   5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100
+document.write("Q12 <br/>");
+    var v=5;
+document.write(v + ",");
+    for (h=1;h<20;h++){
+    v=v+5;
+    document.write(v+ ",");
+}
+
+// 13. You have given the following arrays:
+// var students = ["Ali", "Sami", "Taha", "Inam"];
+// var scores = [58, 73, 89, 90];
+// FOR	Loops |	JAVASCRIPT
+// Write a program to generate the following HTML table in your 
+// browser using JS.
+// var students=["ALi","Sami","Taha","Inam"];
+// var scores=[58,73,89,90];
+// students=document.getElementById("name").innerHTML;
+//  scores=document.getElementById("top").innerHTML;
+
+// 15. You have an array
+// A = [ [1,2,3] , [4,5,6] , [7,8,9] ]
+// Write each element on new line with the help of nested for 
+// loops
+
+var b=[[1,2,3],[4,5,6],[7,8,9]];
+for (var loop=1;loop<4;loop++){
+    document.write(b[loop]);
+}
+// 16. Write a program to repeatedly print the value of the variable 
+// num which is input by user. Value should be decreasing by 0.5 
+// each time, as long as x Value remains positive.
+
+document.write("Q16 <br/>");
+var x=parseInt(prompt("please enter value "));
+document.write(x +",");
+for(var g=0;g<10;g++) {
+    x=x-0.5;
+    document.write(x + ",");
+}
+
+// 17. The even/odd reporter
+// Write a for loop that will iterate from 0 to 20. For each 
+// iteration, it will check if the current number is even or odd, and 
+// report that to the screen (e.g. "2 is even")
+document.write(" <br/>Q17 <br/>");
+document.write("<br/>")
+for (var y=0;y<21;y++) {
+    if (y%2==0) {
+        document.write(y + "is even <br/>");
+    }
+        else {
+        document.write(y + "is odd <br/>");
+        }
+    }
+
+// 18. Write a program to calculate the product of the odd integers 
+// from 1 to 7
+
+document.write("<br/>");
+document.write("Q18 <br/>");
+
+var oddInteger;
+var product=1;
+for (var loop=1;loop<8;loop=loop+2) {
+product=product*loop;
+}
+document.write("product of odd integers from 1 to 7  is " +product);
+
+document.write("<br/>Q19 <br/>");
+document.write("<br/>");
+
+// 19. Write a program that will write out a wedge of stars. The user 
+// will enter the initial number of stars, and the program will write 
+// out lines of stars where each line has one few star than the 
+// previous line. Initial number of stars: 7
+
+document.write("<br/>");
+document.write("Q18 <br/>");
+
+var star=parseInt(prompt("please enter no of stars to be printed in stars"));
+for (var i=star;i>=1;i--) {
+    for (var j=1;j<=i;j++){
+        document.write("*")
+    }
+        document.write("<br/>");
+}
+
+// 20. Write a program to create the following patterns in your 
+// browser. Take number of lines as an input
+
+document.write("<br/>Q20 part a<br/>");
+document.write("<br/>");
+var nooflines;
+nooflines=parseInt(prompt("Please enter number of lines for star"));
+for (var loop=1;loop<=nooflines;loop++) {
+document.write("**** <br/>");
+
+}
+
+// 20. Write a program to create the following patterns in your 
+// browser. Take number of lines as an input
+
+document.write("<br/>Q20 part b<br/>");
+document.write("<br/>");
+var n=parseInt(prompt("please enter number of rows in stars"));
+for (var x=1;x<=n;x++) {
+ 
+for (var y=1;y<=x;y++) {
+    document.write("*");   
+}
+document.write("<br/>");
+}
+
+// 20. Write a program to create the following patterns in your 
+// browser. Take number of lines as an input
+
+document.write("<br/>Q20 part c<br/>");
+document.write("<br/>");
+var n=parseInt(prompt("please enter number of rows"));
+for (var x=n;x>=1;x--) {
+ 
+for (var y=1;y<=x;y++) {
+    document.write("*");   
+}
+document.write("<br/>");
+}
+
+</script>
+<!-- <div id="top">
+document.write(top);
+</div>
+<div id="name"> -->
+
+</div>    
+</body>
+</html>
+
